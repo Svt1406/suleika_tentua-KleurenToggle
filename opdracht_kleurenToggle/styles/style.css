@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+.toggle-container {
+  display: block;
+  position: absolute;
+  padding-left: 60px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.toggle-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.toggle-container:hover input ~ .checkmark {
+  background-color: darkslategray;
+}
+.toggle-container input:checked ~ .checkmark {
+  background-color: dimgray;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  height: 15px;
+  width: 15px;
+  background-color: snow;
+  border-radius: 50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-color {
+  overflow-x: hidden;
+  background-color: #e1d7d7;
+}
+
+h6 {
+  margin-left: 70px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.5px 0.5px #888282;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 9vh;
+  font-family: "Poppins", sans-serif;
+  background-color: maroon;
+  padding-left: 150px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.toggle__intro {
+  color: #e1d7d7;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 1px #888282;
+}
+.toggle__list {
+  position: absolute;
+  right: 0px;
+  height: 89vh;
+  top: 11vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+.toggle__item {
+  list-style: none;
+  padding-top: 10px;
+  width: 225px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2px 0px;
+  transition: transform 0.5s ease-in-out;
+  color: #070707;
+  border-left: 1px solid #f4f3f3;
+  border-top: 1px solid #f4f3f3;
+  border-bottom: 1px solid #f4f3f3;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.toggle--btn {
+  padding: 6px;
+  border: 2px solid #f4f3f3;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.toggle--btn div {
+  width: 22px;
+  height: 2px;
+  background-color: #f4f3f3;
+  margin: 5px;
+}
+
+.toggle-active {
+  transform: translateX(0%);
+}
+
+.background-text {
+  color: maroon;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  margin-top: 50px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #888282;
+}/*# sourceMappingURL=style.css.map */
